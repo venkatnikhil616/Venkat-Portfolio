@@ -5,8 +5,7 @@ import { BookOpen, Award, GraduationCap, Calendar } from 'lucide-react';
 
 export default function About() {
   const stats = [
-    { number: '7.67', label: 'B.Tech CGPA', icon: <GraduationCap size={20} /> },
-    { number: 'Top 40', label: 'AI Project (Shell/AICTE)', icon: <Award size={20} /> },
+    { number: '7.53', label: 'B.Tech CGPA', icon: <GraduationCap size={20} /> },
     { number: '3+', label: 'Industry Projects', icon: <BookOpen size={20} /> },
     { number: '1st Place', label: 'Sudoku & Project Expo Wins', icon: <Award size={20} /> },
   ];
@@ -17,7 +16,7 @@ export default function About() {
     "Software Engineering",
     "Database Management Systems",
     "Object-Oriented Programming",
-    "Machine Learning Basics",
+    "Cloud Computing Basics",
   ];
 
   return (
@@ -29,10 +28,10 @@ export default function About() {
         <div className="about-info">
           <h3 className="about-title">Software Engineer Student &amp; Tech Enthusiast</h3>
           <p className="about-summary">
-            Currently pursuing my Bachelor of Technology in Computer Science (graduating 2027), I am a passionate developer with practical experience in creating web applications and exploring the potential of Artificial Intelligence.
+            Currently pursuing my Bachelor of Technology in Computer Science (graduating 2027), I am a passionate developer with hands-on experience in Cloud Computing, Cybersecurity, Linux Administration, and Full-Stack Web Development. I enjoy building secure and scalable applications, exploring cloud technologies, and developing AI-powered security solutions to solve real-world challenges.
           </p>
           <p className="about-summary">
-            Through internships at organizations like InsightQuest Tech and Shell-Edunet, I have honed my skills in MERN-stack web development and applying machine learning solutions to practical problems. I thrive in collaborative hackathons and project expos, where my solutions have earned top recognition.
+            Through internships at organizations like TATA and InAmigos Foundation, I have honed my skills as Cyber Security Analyst & AI web development and applying solutions to practical problems. I thrive in collaborative hackathons and project expos.
           </p>
 
           <div className="about-stats">
@@ -55,10 +54,10 @@ export default function About() {
               <div>
                 <span className="badge" style={{ marginBottom: '0.5rem' }}>Higher Education</span>
                 <h3 className="edu-title">Bachelor of Technology (B.Tech)</h3>
-                <p className="edu-school">Avanthi&apos;s St. Theresa Institute of Engineering &amp; Technology</p>
+                <p className="edu-school">Avanthi&apos;s St. Theressa Institute of Engineering &amp; Technology</p>
               </div>
               <div className="edu-cgpa">
-                CGPA: 7.67
+                CGPA: 7.53
               </div>
             </div>
 
