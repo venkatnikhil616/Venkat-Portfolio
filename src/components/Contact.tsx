@@ -9,10 +9,10 @@ export default function Contact() {
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   const contactInfo = {
-    email: 'venuchandaka513@gmail.com',
-    phone: '+91 8499836938',
-    location: 'Thangudubilli, Vizianagaram, Andhra Pradesh, India',
-    linkedin: 'https://linkedin.com/in/venu-chandaka-147n513',
+    email: 'venkatnikhil616@gmail.com',
+    phone: '+91 9848654484',
+    location: 'Marathahalli, Bengaluru, Karnataka, India',
+    linkedin: 'https://www.linkedin.com/in/venkat-nikhil-vallamsetty-293216367',
   };
 
   const handleCopy = (text: string, field: string) => {
@@ -53,7 +53,7 @@ export default function Contact() {
           <div>
             <h3 className="contact-intro-title">Let&apos;s discuss something great</h3>
             <p className="contact-intro-desc">
-              I am open to software engineering internships and junior developer roles. If you have an exciting project, an internship opportunity, or simply want to chat about AI, ML, or web development, reach out!
+              I am open to internships and entry-level opportunities in Cloud Computing, Cybersecurity, Linux Administration, and Full-Stack Web Development. If you have an exciting project, internship opportunity, or would like to discuss AWS Cloud, Linux Administration, Network Security, AI-powered security solutions, or modern web technologies, feel free to reach out!
             </p>
           </div>
 
