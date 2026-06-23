@@ -25,21 +25,15 @@ export default function Achievements() {
       icon: <Trophy size={22} />
     },
     {
-      title: '1st Place – ProPrep AI Interview System',
-      event: 'PRAGYAN Project Expo 2026',
-      description: 'Secured top honors at the engineering project expo for ProPrep, recognized for technical execution and computer vision integrations.',
-      icon: <Trophy size={22} />
-    },
-    {
       title: '1st Place – College Website Development',
       event: 'ATOS Tech Fest 2025',
       description: 'Won first prize for designing and coding a modern, highly responsive university portal mockup with optimized page speed performance.',
       icon: <Trophy size={22} />
     },
     {
-      title: 'Top 40 National Project Recognition',
-      event: 'Shell-Edunet AICTE Internship 2025',
-      description: 'Honored in the top 40 projects nationally out of thousands of submissions for a smart AI solution resolving sustainability problems.',
+      title: 'Member of Toastmasters International Club',
+      event: 'Waltair Toastmasters International',
+      description: 'By being a member of Toastmasters club, Ive mastered my communication skills and leadership qualities which helped me to enhance my careeer',
       icon: <Brain size={22} />
     },
     {
@@ -51,10 +45,11 @@ export default function Achievements() {
   ];
 
   const certifications: Certification[] = [
-    { name: 'Python Developer Certification', issuer: 'Industry Partner', year: '2023' },
-    { name: 'Java Developer Certification', issuer: 'Industry Partner', year: '2023' },
-    { name: 'HTML5 & CSS Certification', issuer: 'W3Schools / Academy', year: '2023' },
-    { name: 'Skills4Future AI Internship Certificate', issuer: 'Shell-Edunet / AICTE', year: '2023' }
+  { name: 'Cryptography and Network Security (Elite)', issuer: 'NPTEL', year: '2026' },
+  { name: 'Introduction to Critical Infrastructure Protection', issuer: 'OPSWAT', year: '2026' },
+  { name: 'Cybersecurity Job Ready Certification (86%)', issuer: 'Certigo', year: '2026' },
+  { name: 'API Development: Framework Security', issuer: 'Infosys', year: '2026' },
+  { name: 'Python Basics for Data Science', issuer: 'IBM', year: '2026' }
   ];
 
   return (
