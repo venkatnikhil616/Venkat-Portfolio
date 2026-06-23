@@ -35,7 +35,7 @@ export default function Projects() {
     {
       id: 'Rothschild NIDS',
       title: 'Rothschild NID System',
-      category: 'CyberSecf-ML',
+      category: 'CyberSec-ML',
       categoryLabel: 'CyberSecurity & Machine Learning',
       shortDesc: 'Real-time Network Intrusion Detection System using machine learning to analyze, classify, and detect malicious network traffic and cybersecurity threats.',
       longDesc: 'Rothschild-NIDS is a real-time Network Intrusion Detection System designed to identify and classify malicious network traffic using machine learning techniques. Built using Flask, Scikit-learn, and SQLite, the system processes network traffic data, detects suspicious activities, and performs threat analysis for cybersecurity monitoring. The application focuses on intrusion detection, anomaly identification, and real-time security monitoring to enhance network protection and cybersecurity awareness.',
