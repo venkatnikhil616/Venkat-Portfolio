@@ -66,7 +66,7 @@ export default function Header() {
         <div className="container nav-container">
           {/* Logo */}
           <a href="#home" className="logo" onClick={(e) => handleLinkClick(e, 'home')}>
-            VENKAT NIKHIL<span>VALLAMSETTY</span>
+            VENKAT<span>NIKHIL</span>
           </a>
 
           {/* Desktop Nav Menu */}
