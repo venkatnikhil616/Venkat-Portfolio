@@ -17,12 +17,12 @@ export default function Footer() {
       <div className="container footer-content">
         {/* Brand */}
         <div className="footer-logo" onClick={handleScrollToTop} style={{ cursor: 'pointer' }}>
-          VENU <span>CHANDAKA</span>
+          VENKAT <span>NIKHIL</span>
         </div>
 
         {/* Text */}
         <div className="footer-text">
-          &copy; {new Date().getFullYear()} Chandaka Venu. All Rights Reserved. Built with Next.js.
+          &copy; {new Date().getFullYear()} Venkat Nikhil. All Rights Reserved. Built with Next.js.
         </div>
 
         {/* Links */}
