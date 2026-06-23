@@ -15,7 +15,7 @@ import {
 
 interface Skill {
   name: string;
-  category: 'languages' | 'frameworks' | 'ml' | 'databases';
+  category: 'languages' | 'frameworks' | 'cloud' | 'databases';
   level: number; // percentage
   levelText: string;
   icon: React.ReactNode;
