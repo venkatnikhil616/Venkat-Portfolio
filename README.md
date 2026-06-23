@@ -14,7 +14,7 @@ A modern and responsive developer portfolio built with Next.js, showcasing my ex
 🌐 Live Portfolio
 
 🚀 Portfolio Website:
-https://venkatnikhilportfolio.vercel.app/
+https://venkat-portfolio-taupe.vercel.app/
 
 ---
 
