@@ -33,10 +33,10 @@ export default function Skills() {
     { name: 'Bash', category: 'languages', level: 70, levelText: 'Intermediate', icon: <Code size={18} /> },
     
     // Frameworks & Libraries
-    { name: 'HTML%', category: 'frameworks', level: 85, levelText: 'Advanced', icon: <Cpu size={18} /> },
+    { name: 'HTML5', category: 'frameworks', level: 85, levelText: 'Advanced', icon: <Cpu size={18} /> },
     { name: 'Flask', category: 'frameworks', level: 80, levelText: 'Intermediate', icon: <Cpu size={18} /> },
     { name: 'React', category: 'frameworks', level: 80, levelText: 'Intermediate', icon: <Server size={18} /> },
-    { name: 'CSS', category: 'frameworks', level: 80, levelText: 'Intermediate', icon: <Server size={18} /> },
+    { name: 'CSS3', category: 'frameworks', level: 80, levelText: 'Intermediate', icon: <Server size={18} /> },
     { name: 'FastAPI', category: 'frameworks', level: 75, levelText: 'Intermediate', icon: <Server size={18} /> },
     { name: 'Tailwind CSS', category: 'frameworks', level: 80, levelText: 'Advanced', icon: <BarChart size={18} /> },
     
