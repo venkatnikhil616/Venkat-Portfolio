@@ -41,10 +41,20 @@ export default function Contact() {
     setErrorMessage('');
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: '0e1a69be-f8e2-4949-adff-542af2da6d4a',
+          name: formData.name,
+          email: formData.email,
+          subject: `📬 Portfolio Message from ${formData.name}: ${formData.subject || 'General Inquiry'}`,
+          message: formData.message,
+          from_name: `${formData.name} via Venkat Portfolio`,
+        }),
       });
 
       const data = await response.json();
@@ -54,7 +64,7 @@ export default function Contact() {
         setFormData({ name: '', email: '', subject: '', message: '' });
         setTimeout(() => setFormStatus('idle'), 6000);
       } else {
-        setErrorMessage(data.error || 'Failed to send message. Please try again later.');
+        setErrorMessage(data.message || 'Failed to send message. Please try again later.');
         setFormStatus('error');
       }
     } catch (err: any) {
