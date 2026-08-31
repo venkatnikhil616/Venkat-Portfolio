@@ -56,7 +56,7 @@ export default function Skills() {
     { name: 'Git & GitHub', category: 'databases', level: 85, levelText: 'Advanced', icon: <Wrench size={18} /> },
     { name: 'VS Code', category: 'databases', level: 90, levelText: 'Advanced', icon: <Wrench size={18} /> },
     { name: 'Nmap', category: 'databases', level: 90, levelText: 'Advanced', icon: <Wrench size={18} /> },
-    { name: 'WireShark', category: 'databases', level: 0, levelText: 'Advanced', icon: <Wrench size={18} /> },
+    { name: 'WireShark', category: 'databases', level: 85, levelText: 'Advanced', icon: <Wrench size={18} /> },
   ];
 
   const filteredSkills = activeTab === 'all' 
@@ -67,7 +67,7 @@ export default function Skills() {
     { id: 'all', label: 'All Skills' },
     { id: 'languages', label: 'Languages' },
     { id: 'frameworks', label: 'Web & Frameworks' },
-    { id: 'cloud', label: 'cloud & Cyber Security' },
+    { id: 'cloud', label: 'Cloud & Cyber Security' },
     { id: 'databases', label: 'Databases & Tools' },
   ] as const;
 

@@ -57,7 +57,7 @@ export default function Projects() {
       title: 'Phishing URL Detection System',
       category: 'Sec',
       period: '2026',
-      categoryLabel: 'AI &  Cyber Security',
+      categoryLabel: 'AI & Cybersecurity',
       shortDesc: 'An AI-based phishing URL detection system designed to identify malicious and fraudulent websites through URL analysis and threat prediction techniques.',
       longDesc: 'Developed an AI-powered phishing URL detection system using machine learning techniques to identify malicious and fraudulent websites. Built with Python and Scikit-learn, the system uses Logistic Regression for threat classification, along with URL feature extraction and preprocessing techniques to improve detection accuracy. The application focuses on real-time phishing detection and cybersecurity protection against online threats.',
       tech: ['Python', 'Scikit-learn', 'Logistic Regression', 'Pandas', 'Numpy'],
@@ -68,7 +68,7 @@ export default function Projects() {
         'Enhanced cybersecurity protection against phishing attacks and fraudulent websites.'
       ],
       
-      githubUrl: 'https://github.com/venkatnikhil616/',
+      githubUrl: 'https://github.com/venkatnikhil616/AI-Based-Phishing-URL-Detection-System',
       icon: <Sprout size={24} />
     },
   ];

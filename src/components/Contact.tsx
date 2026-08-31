@@ -27,20 +27,41 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
+      setErrorMessage('Please fill in all required fields (Name, Email, and Message).');
       setFormStatus('error');
       return;
     }
 
     setFormStatus('submitting');
-    // Simulate API call
-    setTimeout(() => {
-      setFormStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setFormStatus('idle'), 5000); // reset status after 5s
-    }, 1500);
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setFormStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setFormStatus('idle'), 6000);
+      } else {
+        setErrorMessage(data.error || 'Failed to send message. Please try again later.');
+        setFormStatus('error');
+      }
+    } catch (err: any) {
+      console.error('Contact form submission error:', err);
+      setErrorMessage('Network error occurred. Please check your connection and try again.');
+      setFormStatus('error');
+    }
   };
 
   return (
@@ -180,7 +201,7 @@ export default function Contact() {
 
             {formStatus === 'error' && (
               <div className="form-status form-status-error">
-                Please fill in all the required fields correctly.
+                {errorMessage || 'Please fill in all the required fields correctly.'}
               </div>
             )}
 

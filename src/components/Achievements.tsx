@@ -33,7 +33,7 @@ export default function Achievements() {
     {
       title: 'Member of Toastmasters International Club',
       event: 'Waltair Toastmasters International',
-      description: 'By being a member of Toastmasters club, Ive mastered my communication skills and leadership qualities which helped me to enhance my careeer',
+      description: "By being a member of Toastmasters club, I've mastered my communication skills and leadership qualities which helped me to enhance my career",
       icon: <Brain size={22} />
     },
     {
