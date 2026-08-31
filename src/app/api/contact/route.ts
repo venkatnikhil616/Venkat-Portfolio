@@ -11,14 +11,13 @@ export async function POST(req: Request) {
       );
     }
 
-    const accessKey = process.env.WEB3FORMS_ACCESS_KEY;
+    const accessKey = process.env.WEB3FORMS_ACCESS_KEY || '0e1a69be-f8e2-4949-adff-542af2da6d4a';
 
     if (!accessKey) {
-      console.warn('WEB3FORMS_ACCESS_KEY is not configured in .env.local');
       return NextResponse.json(
         {
           success: false,
-          error: 'Email service access key is not yet configured. Please add WEB3FORMS_ACCESS_KEY in .env.local.'
+          error: 'Email service access key is missing.'
         },
         { status: 500 }
       );
